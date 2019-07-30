@@ -1,0 +1,75 @@
+class Person {
+    constructor(nombre){
+        this.nombre=nombre;
+        
+    }
+     setNombre(nombre){
+        return this.nombre=nombre;
+    }
+    setApellido(apellido){
+        return this.apellido=apellido;
+    }
+    setSexo(sexo){
+        return this.sexo=sexo;
+    }
+    setEdad(edad){
+        return this.edad=edad;
+    }
+    setEstatura(estatura){
+        return this.estatura=estatura;
+    }
+    getNombre() {
+        return "Adan";
+    }
+    getApellido() {
+        return "Mendoza";
+    }
+    getSexo() {
+        return "Masculino";
+    }
+    getEdad() {
+        return "25 años";
+    }
+    getEstatura() {
+        return "172cm";
+    }
+    
+    getPropiedadNombre(){
+        return this.nombre;
+    }
+
+    getPropiedadApellido(){
+        return this.apellido;
+    }
+    getPropiedadSexo(){
+        return this.sexo;
+    }
+    getPropiedadEdad(){
+        return this.edad;
+    }
+    getPropiedadEstatura(){
+        return this.estatura;
+    }
+}
+
+var clase_uno=new Person();
+clase_uno.getNombre();
+clase_uno.getApellido();
+clase_uno.getSexo();
+clase_uno.getEdad();
+clase_uno.getEstatura();
+var nombre=clase_uno.getNombre();
+var apellido=clase_uno.getApellido();
+var sexo=clase_uno.getSexo();
+var edad=clase_uno.getEdad();
+var estatura=clase_uno.getEstatura();
+console.log("Hola tu nombre es:" + nombre);
+console.log("Hola tu apellido es:" + apellido);
+console.log("Hola tu sexo es:" + sexo);
+console.log("Hola tu edad es:" + edad);
+console.log("Hola tu estatura es:" + estatura);
+console.log("Cambio de nombre:" + clase_uno.setNombre("Juan"));
+console.log("Cambio de apellido:" + clase_uno.setApellido("Juarez"));
+console.log("Cambio de sexo:" + clase_uno.setSexo("Masculine"));
+console.log("Cambio de edad:" + clase_uno.setEdad("24 años"));
+console.log("Cambio de estatura:" + clase_uno.setEstatura("175cm"));
